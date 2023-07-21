@@ -1,0 +1,113 @@
+<body>
+
+<script>
+
+//1) Hallar la expresión de cada valor en:
+
+/*
+let x = [{a:1, b:2}, 3, [4, 5, [6, 7, 8], [9, 10], 11], {c:3, d: [12, 13, 14]}];
+
+console.log(x[0].a);
+console.log(x[0].b);
+console.log(x[1]);
+console.log(x[2][0]);
+console.log(x[2][1]);
+console.log(x[2][2][0]);
+console.log(x[2][2][1]);
+console.log(x[2][2][2]);
+console.log(x[2][3][0]);
+console.log(x[2][3][1]);
+console.log(x[2][4]);
+console.log(x[3].c);
+console.log(x[3].d[0]);
+console.log(x[3].d[1]);
+console.log(x[3].d[2]);
+*/
+
+//2) Hacer un programa que permita llenar 2 matrices de NxN y las multiplique.
+
+/*
+n = prompt ("Introduce el numero de filas y columnas para las matrices: ");
+
+let a = [], b;
+while (a.push(b = []) <= n) 
+while (b.push(1) < n);
+
+let c = [],  d;
+while (c.push(d = []) <= n) 
+while (d.push(1) < n);
+
+for (let i = 0;  i<n;  i++){
+
+for (let j = 0;  j<n;  j++){
+
+a[i][j] = prompt("Introduzca el valor [" + i + "][" + j + "] de la Matriz 1: ");
+
+}
+}
+
+for (let i = 0;  i<n;  i++){
+
+for (let j = 0;  j<n;  j++){
+
+c[i][j] = prompt("Introduzca el valor [" + i + "][" + j + "] de la Matriz 2: ");
+
+}
+}
+
+/*
+const Producto = [];
+
+for (let i = 0; i < n; i++){
+const Fila = [];
+for (let j = 0; j < n; j++){
+let Sum = 0;
+for (let k = 0; k < n; k++){
+
+    Sum+=a[i][k] * c[k][j];
+
+}
+Fila.push(Sum);
+}
+Producto.push(Fila);
+}
+
+//const Producto = [];
+
+let Producto = a.map((fila, _) => c[0].map((_, j) =>
+      fila.reduce((sum, valor, k) => sum + valor * c[k][j], 0))
+);
+
+
+for(let i = 0; i<n; i++){
+
+    alert (Producto[i]);
+
+}*/
+
+
+//3) Cómo destructurar el siguiente arreglo:
+
+/*
+let a = {x:5, y:10};
+let b = {z:15, w:7};
+let arr = [a, b, 50, [100, 200]];
+
+let a1, a2; let ades = {a1, a2}; ades = a;
+let b1, b2; let bdes = {b1, b2}; bdes = b;
+let arr1, arr2, arr3, arr4; let arrdes = [arr1, arr2, arr3, arr4]; arrdes = arr;
+
+console.log(ades);
+console.log(bdes);
+console.log(arrdes);
+console.log(arrdes[0]);
+console.log(arrdes[3][1]);
+*/
+
+</script>
+
+</body>
+
+
+
+
